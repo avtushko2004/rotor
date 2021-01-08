@@ -147,5 +147,6 @@
   </main>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/auth-n-reg.js"></script>
 </body>
 </html>
