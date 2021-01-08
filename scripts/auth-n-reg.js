@@ -1,4 +1,9 @@
-let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-width=0,height=0,left=-1000,top=-1000`;
+let popup = document.querySelector(".popup");
+let  accountButton = document.querySelector(".liked-img");
 
-open('/', 'test', params);
+accountButton.addEventListener("click", function(){popupMaker();});
+
+function popupMaker(){
+    popup.style.display = "block";
+}
+

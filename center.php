@@ -60,6 +60,11 @@
         </div>
       </div>
     </section>
+    <section class="reg-pop-sec">
+      <div class="popup">
+        
+      </div>
+    </section>
     <section class="main-hit-prod">
       <div>
         <h1 class="hit-prod-zag">Хиты продаж</h1>

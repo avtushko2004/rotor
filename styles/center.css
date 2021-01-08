@@ -201,6 +201,16 @@ body{
   margin-block-start:0;
   margin-block-end:0;
 }
+.popup{
+  display: none;
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  z-index: 15;
+}
+.popup-display-none{
+  display: block !important;
+}
 .hit-prod-zag{
   font-size: 42px;
   color: rgb(16, 56, 84);
