@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles/popup.css">
 </head>
 <body>
+   <div class="popup-container"> 
     <div class="popup">
-
     </div>
+</div> 
 </body>
 <script src="scripts/auth-n-reg.js"></script>
 </html>
