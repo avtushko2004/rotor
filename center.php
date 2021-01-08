@@ -44,22 +44,8 @@
             <div class="position-product-menu"><div class="arrow arrow-left"></div>Электроинструмент</div>
             <div class="position-product-menu-last"><div class="arrow arrow-left"></div>Бренды</div>
           </div>
-          <!--<img src="search-13-32.ico" class="search-img"/>-->
-          <!--<img src="menu-4-32.ico" width="32px" height="32px"/>-->
-        <!--</div>-->
         </div>
       </div>
-      <!--<nav class="nav-cont">
-        <ul class="ul-nav">
-          <li class="li-main-nav">Husqvarna</li>
-          <li class="li-main-nav">Садовые инструменты</li>
-          <li class="li-main-nav">Велосипеды</li>
-          <li class="li-main-nav">Мотоциклы</li>
-          <li class="li-main-nav">Бренды</li>
-          <li class="li-main-nav">О нас</li>
-          <li class="li-main-nav">Husqvarna<img src="https://img.icons8.com/color/24/000000/chainsaw.png" class="husq-icon-li-nav"/></li>
-        </ul>
-      </nav>-->
     </div>
   </header>
   <main>
