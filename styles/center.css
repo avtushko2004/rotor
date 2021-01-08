@@ -71,6 +71,7 @@ body{
   justify-content: space-around;
 }
 .search-header{
+  cursor: text;
   padding-top:0;
   padding-left: 3%;
   border: 0;
@@ -81,14 +82,9 @@ body{
   font-size:20px;
   background: url("https://img.icons8.com/material-sharp/24/000000/search.png") no-repeat center 75px;
   background-color: #ffffff;
-  cursor: pointer;
 }
 ::-webkit-input-placeholder {color:rgb(16, 56, 84, 0.18);}
-.search-img{
-  /* position: absolute;
-  margin-top: 1.5%;
-  margin-left: 80%; */
-}
+
 .menu-icon{
   cursor: pointer;
 }
@@ -104,11 +100,6 @@ body{
   margin-top: 1.5%; */
   cursor: pointer;
   height: 32px;
-}
-.account-img{
-  /* position: absolute;
-  margin-left: 70%;
-  margin-top: 1.5%; */
 }
 .ul-nav{
   display: flex;
