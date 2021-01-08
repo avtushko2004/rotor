@@ -31,12 +31,7 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
-<<<<<<< HEAD
             <a onclick="blurPage();" class="account-img"><img src="images/user-32.ico" class="account-img"></a>
-=======
-            <!-- <a href="account.php" class="account-img"><img src="images/user-32.ico" class="account-img"></a> -->
-            <img src="images/user-32.ico" class="account-img">
->>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
             <a href="ur-fav.php" class="liked-img"><img src="images/favorite-2-32.ico" class="liked-img"></a>
             <img src="images/cart-70-32.ico" class="cart-img"/>
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
@@ -161,10 +156,6 @@
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
-<<<<<<< HEAD
 <script src="scripts/login.js"></script>
-=======
-<script src="scripts/auth-n-reg.js"></script>
->>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
 </body>
 </html>
