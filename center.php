@@ -194,9 +194,11 @@
           </div>
         </form>
         <div class="btn-reg-cont">
-          <button type="submit" name="submit_button">Отправить</button>
+          <button type="submit" name="submit_button" class="reg-submit">Зарегестрироваться</button>
         </div>
       </div>
+    <div>
+     <span href="#" class="close" onclick="blurPage('unblur')"></span>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
