@@ -16,12 +16,12 @@
 <body>
   <header>
     <div class="page-header">
-      <div class="header-contacts">
+      <!-- <div class="header-contacts">
         <p class="p-header-adres">г.Новополоцк ул.Калинина 20</p>
         <img src="images/instagram-6-32.ico" width="26px" height="26px"/>
         <img src="images/vk-32.ico" width="26px" height="26px"/>
         <p class="p-header-num-n-email"><span class="header-tel">+375-33-344-14-00</span><span class="header-email">rotor-pro@rotor-pro.by</span></p>
-      </div>
+      </div> -->
       <div class="upper-header">
         <div class="search-n-name-cont">
           <a href="center.php" class="a-logo"><h1 class="logo-text">ROTOR.PRO</h1></a>
