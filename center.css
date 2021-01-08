@@ -55,7 +55,7 @@ body{
   flex-direction: row;
 }
 .search-header{
-
+  cursor: text;
   padding-top:0;
   padding-left: 3%;
   border: 0;
