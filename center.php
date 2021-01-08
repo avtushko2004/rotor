@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Дарова костян -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
