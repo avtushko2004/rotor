@@ -109,7 +109,6 @@ body{
   /* position: absolute;
   margin-left: 70%;
   margin-top: 1.5%; */
-  cursor: pointer;
 }
 .ul-nav{
   display: flex;

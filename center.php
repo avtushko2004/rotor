@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!-- Дарова костян -->
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,12 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
+<<<<<<< HEAD
             <a onclick="blurPage();" class="account-img"><img src="images/user-32.ico" class="account-img"></a>
+=======
+            <!-- <a href="account.php" class="account-img"><img src="images/user-32.ico" class="account-img"></a> -->
+            <img src="images/user-32.ico" class="account-img">
+>>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
             <a href="ur-fav.php" class="liked-img"><img src="images/favorite-2-32.ico" class="liked-img"></a>
             <img src="images/cart-70-32.ico" class="cart-img"/>
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
@@ -44,22 +50,8 @@
             <div class="position-product-menu"><div class="arrow arrow-left"></div>Электроинструмент</div>
             <div class="position-product-menu-last"><div class="arrow arrow-left"></div>Бренды</div>
           </div>
-          <!--<img src="search-13-32.ico" class="search-img"/>-->
-          <!--<img src="menu-4-32.ico" width="32px" height="32px"/>-->
-        <!--</div>-->
         </div>
       </div>
-      <!--<nav class="nav-cont">
-        <ul class="ul-nav">
-          <li class="li-main-nav">Husqvarna</li>
-          <li class="li-main-nav">Садовые инструменты</li>
-          <li class="li-main-nav">Велосипеды</li>
-          <li class="li-main-nav">Мотоциклы</li>
-          <li class="li-main-nav">Бренды</li>
-          <li class="li-main-nav">О нас</li>
-          <li class="li-main-nav">Husqvarna<img src="https://img.icons8.com/color/24/000000/chainsaw.png" class="husq-icon-li-nav"/></li>
-        </ul>
-      </nav>-->
     </div>
   </header>
   <main>
@@ -72,6 +64,11 @@
           <!--<h1 class="zag-main-video">Ротор-Про</h1>-->
           <h1 class="h1-main-video-text">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
         </div>
+      </div>
+    </section>
+    <section class="reg-pop-sec">
+      <div class="popup">
+
       </div>
     </section>
     <section class="main-hit-prod">
@@ -164,6 +161,10 @@
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
+<<<<<<< HEAD
 <script src="scripts/login.js"></script>
+=======
+<script src="scripts/auth-n-reg.js"></script>
+>>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
 </body>
 </html>
