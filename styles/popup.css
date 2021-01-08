@@ -1,0 +1,6 @@
+.popup{
+    width: 1000px;
+    height: 600px;
+    box-shadow: 1px black;
+    border-radius: 10%;
+}
