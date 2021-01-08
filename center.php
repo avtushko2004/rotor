@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Дарова костян -->
 <html lang="en">
@@ -152,25 +153,50 @@
   </section>
   </main>
   <div class="displayWindow" id="login">
+  <div class="popup-cont">
   <h1 class="reg-h1-popup">Регистрация</h1>
-        <form method="post">
-        <!-- лейблы к полям input сделай, Костя -->
-        Логин
-        <input type="text" name="login" value="" required><br/>
-        Пароль (может содержать только цифры и буквы латинского алфавита)
-        <input type="password" name="password" value="" required><br/>
-        Повтор пароля
-        <input type="password" name="password_repeat" value="" required><br/>
-        Эл. почта
-        <input type="email" name="email" value="" required><br/>
-        Имя и фамилия
-        <input type="text" name="name_and_surname" value="" required><br/>
-        Адрес
-        <input type="text" name="adres" value="" required><br/>
-        Почтовый индекс
-        <input type="text" name="postcode" value="" required><br/>
-        <button type="submit" name="submit_button">Отправить</button>
+        <form method="post" class="form-reg">
+          <div class="q-input-cont">  
+            <div class="input-reg-cont">
+              <label for="login" class="reg-label">Логин</label>
+                <input class="input-reg" type="text" name="login" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="email" class="reg-label">Эл. почта</label>
+                <input class="input-reg" type="email" name="email" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="name" class="reg-label">Имя</label>
+                <input class="input-reg" type="text" name="name" value="" required>
+            </div>
+           <div class="input-reg-cont">
+              <label for="surname" class="reg-label">Фамилия</label>
+                <input class="input-reg" type="text" name="surname" value="" required>
+            </div>
+          </div>  
+          <div class="q-input-cont">  
+            <div class="input-reg-cont"> 
+              <label for="password" class="reg-label">Пароль</label>
+                <input class="input-reg" type="password" name="password" value="" required>
+            </div>
+            <div class="input-reg-cont">  
+              <label for="password_repeat" class="reg-label">Повтор пароля</label>
+                <input class="input-reg" type="password" name="password_repeat" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="adres" class="reg-label">Адрес</label>
+                <input class="input-reg" type="text" name="adres" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="postcode" class="reg-label">Почтовый индекс</label>
+                <input class="input-reg" type="text" name="postcode" value="" required>
+            </div>
+          </div>
         </form>
+        <div class="btn-reg-cont">
+          <button type="submit" name="submit_button">Отправить</button>
+        </div>
+      </div>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
