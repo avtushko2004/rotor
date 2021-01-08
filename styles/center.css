@@ -84,11 +84,6 @@ body{
   cursor: pointer;
 }
 ::-webkit-input-placeholder {color:rgb(16, 56, 84, 0.18);}
-.search-img{
-  /* position: absolute;
-  margin-top: 1.5%;
-  margin-left: 80%; */
-}
 .menu-icon{
   cursor: pointer;
 }
@@ -104,11 +99,6 @@ body{
   margin-top: 1.5%; */
   cursor: pointer;
   height: 32px;
-}
-.account-img{
-  /* position: absolute;
-  margin-left: 70%;
-  margin-top: 1.5%; */
 }
 .ul-nav{
   display: flex;
