@@ -1,9 +1,8 @@
 <?php
-$auth_data = ['email' => 'krab@gmail.com', 'password' => 'qwerty12345']; // тут данные с формы авторизации
-
 // Подключение к бд, надо поменять host и проверить dbname
-$db = new PDO('mysql:dbname=rotor.pro;host=127.0.0.1:3306', 'root', 'root', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+require('base.php');
 
+$auth_data = ['email' => 'krab@gmail.com', 'password' => 'qwerty12345']; // тут данные с формы авторизации
 $pr = $db->prepare('SELECT * FROM `users` WHERE `email` = ?');
 $pr->execute([$auth_data['email']]);
 $user = $pr->fetchAll();
