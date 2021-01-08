@@ -1,4 +1,5 @@
 <?php
+$db = new PDO('mysql:dbname=rotor.pro;host=127.0.0.1:3306', 'root', 'root');
 function generateRandomString($length = 6)
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -11,7 +12,7 @@ function generateRandomString($length = 6)
 }
 
 if ($_POST !== []) {
-    // тут данные с формы
+    // тут данные с формы регистрации
     $form_data = $_POST;
 
     $err = false;
@@ -91,7 +92,15 @@ if ($_POST !== []) {
     }
     if (iconv_strlen(trim($form_data['postcode'])) > 20) {
         $err = true;
-        echo '15';
+        echo '15 ';
+    }
+
+    // Проверка, что аккаунта с такой эл почтой не существует
+    $pr = $db->prepare('SELECT * FROM `users` WHERE `email` = ?');
+    $pr->execute([$form_data['email']]);
+    if ($pr->fetchAll() !== []){
+        $err = true;
+        echo '16';
     }
 
 }
@@ -103,7 +112,6 @@ if (!$err) {
     $a = ['false', $code];
     echo json_encode($a);
     // Записываем в бд данные, confirmation = 'false'
-    $db = new PDO('mysql:dbname=rotor.pro;host=127.0.0.1:3306', 'root', 'root');
     $pr = $db->prepare("INSERT INTO `users` (`id`, `login`, `password`, `email`, `name`, `surname`, `address`, `postcode`, `confirmation`) 
 VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0')");
     $pr->execute([htmlspecialchars($form_data['login']), hash('sha256', $form_data['password']), htmlspecialchars($form_data['email']),
