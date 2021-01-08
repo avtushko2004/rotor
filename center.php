@@ -30,7 +30,8 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
-            <a href="account.php" class="account-img"><img src="images/user-32.ico" class="account-img"></a>
+            <!-- <a href="account.php" class="account-img"><img src="images/user-32.ico" class="account-img"></a> -->
+            <img src="images/user-32.ico" class="account-img">
             <a href="ur-fav.php" class="liked-img"><img src="images/favorite-2-32.ico" class="liked-img"></a>
             <img src="images/cart-70-32.ico" class="cart-img"/>
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
@@ -62,7 +63,7 @@
     </section>
     <section class="reg-pop-sec">
       <div class="popup">
-        
+
       </div>
     </section>
     <section class="main-hit-prod">
