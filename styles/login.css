@@ -1,0 +1,19 @@
+.displayWindow{
+    display: none !important;
+}
+.blurWindow{
+    filter: blur(10px);
+}
+#login{
+    width: 50%;
+    min-width: 40%;
+    height: 60%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+}

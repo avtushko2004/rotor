@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="icon.png" type="image/png">
   <link rel="stylesheet" href="styles/center.css">
+  <link rel="stylesheet" href="styles/login.css">
   <title>Ротор-Про</title>
 </head>
 <body>
@@ -30,8 +31,12 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
+<<<<<<< HEAD
+            <a onclick="blurPage();" class="account-img"><img src="images/user-32.ico" class="account-img"></a>
+=======
             <!-- <a href="account.php" class="account-img"><img src="images/user-32.ico" class="account-img"></a> -->
             <img src="images/user-32.ico" class="account-img">
+>>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
             <a href="ur-fav.php" class="liked-img"><img src="images/favorite-2-32.ico" class="liked-img"></a>
             <img src="images/cart-70-32.ico" class="cart-img"/>
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
@@ -151,8 +156,15 @@
       </footer>
   </section>
   </main>
+  <div class="displayWindow" id="login">
+        <h1>краб</h1>
+  </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
+<<<<<<< HEAD
+<script src="scripts/login.js"></script>
+=======
 <script src="scripts/auth-n-reg.js"></script>
+>>>>>>> 95471f686d8a0e76d03d5c016b2ad7fca0303504
 </body>
 </html>
