@@ -36,6 +36,9 @@ body{
   z-index: 4;
   position: fixed;
 }
+.account-img{
+  cursor: pointer;
+}
 .a-logo{
   text-decoration: none;
   /* margin-left: 43%; */

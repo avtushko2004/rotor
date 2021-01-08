@@ -152,7 +152,8 @@
   </section>
   </main>
   <div class="displayWindow" id="login">
-        <h1>краб</h1>
+    <div>
+     <span href="#" class="close" onclick="blurPage('unblur')"></span>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
