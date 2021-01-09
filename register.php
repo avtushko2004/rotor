@@ -107,15 +107,18 @@ if (!$err) {
             $code = generateRandomString();
         }
     }
-    mail($form_data['email'], 'Rotor.pro', $code);
-    $code = hash('sha256', $code);
-    $a = ['false', $code];
-    echo json_encode($a);
+
     // Записываем в бд данные, confirmation = 'false'
     $pr = $db->prepare("INSERT INTO `users` (`id`, `login`, `password`, `email`, `name`, `surname`, `address`, `postcode`, `confirmation`, `code`, `secret`) 
 VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0', ?, NULL )");
     $pr->execute([htmlspecialchars($form_data['login']), hash('sha256', $form_data['password']), htmlspecialchars($form_data['email']),
         htmlspecialchars($form_data['name']), htmlspecialchars($form_data['surname']), htmlspecialchars($form_data['address']),
         htmlspecialchars($form_data['postcode']), $code]);
+
+    mail($form_data['email'], 'Подтверждение регистрации', $code, "From: Rotor-pro");
+    $code = hash('sha256', $code);
+    $a = ['false', $code];
+    echo json_encode($a);
+
 }
 ?>
