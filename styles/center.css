@@ -180,10 +180,12 @@ body{
 }
 @media screen and (min-width: 1905px) {
   .video-contrl{
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
-  .video-cont{
-    height: auto;
+  .main-video{
+    width: 100%;
+    height: 150%;
   }
 }
 .main-video-text{
