@@ -189,7 +189,8 @@
     border:2px solid rgb(16, 56, 84);
     border-radius: 1em;
     outline: none;
-    color: rgb(16, 56, 84);
+	color: rgb(16, 56, 84);
+	text-align: center;
   }
   .mailCode{
 	  text-align: center;
