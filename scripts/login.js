@@ -15,34 +15,18 @@ const blurPage = (props) => {
         body.style.overflowY = "hidden";
     }
 }
-let regLabel = document.getElementById('reg-h1');
-let authLabel = document.getElementById('auth-h1');
-let regForm = document.getElementById('reg-form');
-let authForm = document.getElementById('auth-form');
-let regButton = document.getElementById('submit-btn');
-let goAuth = document.getElementById('go-auth');
-let goReg = document.getElementsByClassName('.go-reg');
 
 function authMake(){
-    console.log("антон рак");
-    // regLabel.classList.remove('disabled-h1');
-    // authLabel.classList.add('disabled-h1');
-    goAuth.classList.add('disabled');
-    regForm.classList.add('disabled-form');
-    authForm.classList.remove('disabled-form');
-    regButton.classList.add('auth-btn');
-    regButton.classList.remove('reg-btn');
-    regButton.innerText = "Войти";
-
+    document.getElementById('reg-form').style.display = "none";
+    document.getElementById('auth-form').style.display = "flex";
+    document.getElementById('submit-btn').innerText = "Войти";
+    document.getElementById('go-auth').style.display = "none";
+    document.getElementById('go-reg').style.display = "block";
 }
 function regMake(){
-    console.log("антон рак");
-    // regLabel.classList.add('disabled-h1');
-    // authLabel.classList.remove('disabled-h1');
-    goReg.style.display = "block";
-    regForm.classList.remove('disabled-form');
-    authForm.classList.add('disabled-form');
-    regButton.classList.remove('auth-btn');
-    regButton.classList.add('reg-btn');
-    regButton.innerText = "Зарегистрироваться";
+    document.getElementById('reg-form').style.display = "block";
+    document.getElementById('auth-form').style.display = "none";
+    document.getElementById('submit-btn').innerText = "Зарегистрироваться";
+    document.getElementById('go-auth').style.display = "block";
+    document.getElementById('go-reg').style.display = "none";
 }

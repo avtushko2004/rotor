@@ -213,7 +213,7 @@
           </div>
           </div>
         </form>
-        <form method="post" class="form-auth disabled-form" id="auth-form">
+        <form method="post" style="display: none;" class="form-auth" id="auth-form">
           <h1 class="auth-h1-popup unselectable" id="reg-h1" onclick="authMake()">Авторизация</h1>
             <label for="email" class="auth-label">Эл. почта</label>
               <input input class="input-auth" type="email" name="email" value="" required>
@@ -221,9 +221,9 @@
                 <input class="input-auth" type="password" name="password" value="" autocomplete="on" required>  
         </form>
         <div class="btn-reg-cont">
-          <button onclick="reg();" type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
-          <p class="go-auth" id="go-auth">Уже есть аккаунт? <a class="go-auth-a" onclick="authMake()">Войти</a></p>
-          <p class="go-reg" id="go-reg">Нет аккаунта? <a class="go-reg-a" onclick="regMake()">Зарегестрироваться</a></p>
+          <button onclick="reg();" type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегистрироваться</button>
+          <p style="display: block;" id="go-auth">Уже есть аккаунт? <a class="go-auth-a" onclick="authMake()">Войти</a></p>
+          <p style="display: none;" id="go-reg">Нет аккаунта? <a class="go-reg-a" onclick="regMake()">Зарегистрироваться</a></p>
         </div>
       </div>
     <div>
