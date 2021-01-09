@@ -11,7 +11,7 @@ const reg = () => {
     const postcode = document.getElementsByName('postcode')[0].value;
 
     const xhr = new XMLHttpRequest();
-    const request = `login=${login}&email=${email}&name=${name}&surname=${surname}&password=${password}&password_repeat=${password_repeat}&addres=${adres}&postcode=${postcode}`;
+    const request = `login=${login}&email=${email}&name=${name}&surname=${surname}&password=${password}&password_repeat=${password_repeat}&address=${adres}&postcode=${postcode}`;
     xhr.open("POST", './register.php', true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
