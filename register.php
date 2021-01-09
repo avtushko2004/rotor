@@ -5,6 +5,7 @@ require('base.php');
 
 $form_data = $_POST;
 
+
 $err = false;
 // Вывод на страницу для отладки
 // Проверка логина
@@ -40,7 +41,7 @@ if (trim($form_data['email']) === '') {
     $err = true;
     echo '6n';
 }
-if (filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
+if (!filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
     $err = true;
     echo '7n';
 }
