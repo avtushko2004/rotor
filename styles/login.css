@@ -39,12 +39,17 @@
 .form-reg{
 	display: flex;
 	justify-content: space-around;
-	flex-direction: row;
+	flex-direction: column;
 }
 .form-auth{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+.q-input-reg-cont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .q-input-cont{
 	align-items: stretch;
@@ -71,6 +76,8 @@
 	margin-top: 6%;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .input-reg{
 	width: 100%;
@@ -82,7 +89,7 @@
 	padding-left: 5%;
 }
 .input-auth{
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	border-radius: 3em;
 	margin-top: 1%;
@@ -90,6 +97,16 @@
 	outline: none;
 	font-size: 18px;
 	padding-left: 1%;
+}
+.go-auth{
+	display: block;
+}
+.go-auth-a{
+	color:rgb(16, 56, 84);
+	cursor: pointer;
+}
+.go-reg{
+	display: none;
 }
 .reg-submit{
 	width:320px;
@@ -133,4 +150,10 @@
     }
     .close:after {
     transform: rotate(-45deg);
-    }
+	}
+.disabled{
+	display: none !important;
+}
+.enable{
+	display: block !important;
+}

@@ -167,12 +167,14 @@
   </main>
   <div class="displayWindow" id="login">
   <div class="popup-cont">
-  <div class="h1-popup">
-  <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1> 
-  <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>
-  </div>
         <form method="post" class="form-reg" id="reg-form">
-          <div class="q-input-cont">  
+          <div class="h1-popup" id="h1-popup-reg">
+            <h1 class="reg-h1-popup unselectable" id="reg-h1" >Регистрация</h1> 
+          </div>
+        <!-- <h1 class="reg-h1-popup unselectable" id="reg-h1" >Регистрация</h1>  -->
+        <div class="q-input-reg-cont">
+          <div class="q-input-cont">
+          <!-- <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1>    -->
             <div class="input-reg-cont">
               <label for="login" class="reg-label">Логин</label>
                 <input class="input-reg" type="text" name="login" value="" required>
@@ -190,7 +192,8 @@
                 <input class="input-reg" type="text" name="surname" value="" required>
             </div>
           </div>  
-          <div class="q-input-cont">  
+          <div class="q-input-cont">
+          <!-- <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>   -->
             <div class="input-reg-cont"> 
               <label for="password" class="reg-label">Пароль</label>
                 <input class="input-reg" type="password" name="password" value="" autocomplete="on" required>
@@ -208,8 +211,10 @@
                 <input class="input-reg" type="text" name="postcode" value="" required>
             </div>
           </div>
+          </div>
         </form>
         <form method="post" class="form-auth disabled-form" id="auth-form">
+          <h1 class="auth-h1-popup unselectable" id="reg-h1" onclick="authMake()">Авторизация</h1>
             <label for="email" class="auth-label">Эл. почта</label>
               <input input class="input-auth" type="email" name="email" value="" required>
             <label for="password" class="auth-label">Пароль</label>
@@ -217,6 +222,8 @@
         </form>
         <div class="btn-reg-cont">
           <button onclick="reg();" type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
+          <p class="go-auth" id="go-auth">Уже есть аккаунт? <a class="go-auth-a" onclick="authMake()">Войти</a></p>
+          <p class="go-reg" id="go-reg">Нет аккаунта? <a class="go-reg-a" onclick="regMake()">Зарегестрироваться</a></p>
         </div>
       </div>
     <div>
