@@ -15,6 +15,14 @@ const blurPage = (props) => {
         body.style.overflowY = "hidden";
     }
 }
+const useLoader = (none, block, time) =>{
+    document.getElementsByClassName(none)[0].style.display = "none";
+    document.getElementsByClassName('lds-ring')[0].style.display = "block";
+    setTimeout(function() {
+        document.getElementsByClassName('lds-ring')[0].style.display = "none";
+        document.getElementsByClassName(block)[0].style.display = "block";
+    }, time);
+}
 function authMake(){
     document.getElementById('reg-form').style.display = "none";
     document.getElementById('auth-form').style.display = "flex";

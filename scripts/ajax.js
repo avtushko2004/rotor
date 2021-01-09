@@ -1,3 +1,4 @@
+let mailCode;
 const reg = () => {
 
     const codes = ['Введите логин', 'Длина логина должна быть не менее 6 символов', 'Введите пароль',  'Пароль может содержать только цифры и буквы латинского алфавита', 'Пароль должен содержать не менее 8 символов', 'Пароли не совпадают',  'Введите email', 'Введите корректный email', 'Введите имя', 'Длина имени не должна быть более 16 символов', 'Введите фамилию', 'Длина фамилии не должна быть более 16 символов',  'Введите адрес', 'Длина адреса на должна быть более 100 символов', 'Введите почтовый индекс', 'Длина почтового индекса не должна быть более 20 символов',  'Аккаунт с таким email уже существует'];
@@ -22,12 +23,8 @@ const reg = () => {
                 try {
                     let json = JSON.parse(xhr.responseText);  
                     if (json[0] == 'false') {
-                        document.getElementsByClassName('popup-cont')[0].style.display = "none";
-                        document.getElementsByClassName('lds-ring')[0].style.display = "block";
-                        setTimeout(function tick() {
-                            document.getElementsByClassName('lds-ring')[0].style.display = "none";
-                            document.getElementsByClassName('mailCode')[0].style.display = "block";
-                        }, 1000);
+                        mailCode = json[1];
+                        useLoader('popup-cont','mailCode', 1000);
                     }
                 } catch (error) {
                     let res = xhr.responseText;
@@ -40,4 +37,12 @@ const reg = () => {
         }
     }
     xhr.send(request);
+}
+const checkCode = (props) => {
+    if (props.length == 6 && mailCode == sha256(props)) {
+        useLoader('mailCode','success', 1000);
+        setTimeout(function () {
+            blurPage('unblur');
+        }, 3000);
+    }
 }

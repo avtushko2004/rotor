@@ -237,13 +237,20 @@
           <h1>Подтвердите регистрацию</h1>
             <p class="registration-confirmation-p">Вам на почту пришёл код подтверждения,
             пожалуйста запишите его в форму</p>
-          <input type="text" class="confirmation-code-input">
+          <input type="text" class="confirmation-code-input" oninput = "checkCode(this.value);">
         </div>
+  </div>
+  <div style="display:none;" class="success">
+  <center>
+    <img class="mark" src="https://img.icons8.com/officel/512/000000/checkmark--v2.png"/>
+    <h1>Вы успешно прошли регистрацию</h1>
+    </center>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/ajax.js"></script>
+<script src="../node_modules/js-sha256/src/sha256.js"></script>
 </body>
 </html>
