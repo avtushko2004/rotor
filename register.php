@@ -3,86 +3,86 @@
 require('base.php');
 // тут данные с формы регистрации
 
-$form_data = json_decode(file_get_contents("php://input"));
+$form_data = $_POST;
 
 $err = false;
 // Вывод на страницу для отладки
 // Проверка логина
 if (trim($form_data['login']) === '') {
     $err = true;
-    echo '0 ';
+    echo '0n';
 }
 if (iconv_strlen(trim($form_data['login'])) < 6) {
     $err = true;
-    echo '1 ';
+    echo '1n';
 }
 
 // Проверка пароля
 if (trim($form_data['password']) === '') {
     $err = true;
-    echo '2 ';
+    echo '2n';
 }
 if (!ctype_alnum($form_data['password'])) {
     $err = true;
-    echo '3 ';
+    echo '3n';
 }
 if (iconv_strlen($form_data['password']) < 8) {
     $err = true;
-    echo '4 ';
+    echo '4n';
 }
 if ($form_data['password'] !== $form_data['password_repeat']) {
     $err = true;
-    echo '5 ';
+    echo '5n';
 }
 
 // Проверка эл. почты
 if (trim($form_data['email']) === '') {
     $err = true;
-    echo '6 ';
+    echo '6n';
 }
 if (filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
     $err = true;
-    echo '7 ';
+    echo '7n';
 }
 
 // Проверка имени
 if (trim($form_data['name']) === '') {
     $err = true;
-    echo '8 ';
+    echo '8n';
 }
 if (iconv_strlen(trim($form_data['name'])) > 16) {
     $err = true;
-    echo '9 ';
+    echo '9n';
 }
 
 // Проверка фамилии
 if (trim($form_data['surname']) === '') {
     $err = true;
-    echo '10 ';
+    echo '10n';
 }
 if (iconv_strlen(trim($form_data['surname'])) > 16) {
     $err = true;
-    echo '11 ';
+    echo '11n';
 }
 
 // Проверка адреса
 if (trim($form_data['address']) === '') {
     $err = true;
-    echo '12 ';
+    echo '12n';
 }
 if (iconv_strlen(trim($form_data['address'])) > 100) {
     $err = true;
-    echo '13 ';
+    echo '13n';
 }
 
 // Проверка почтового индекса
 if (trim($form_data['postcode']) === '') {
     $err = true;
-    echo '14 ';
+    echo '14n';
 }
 if (iconv_strlen(trim($form_data['postcode'])) > 20) {
     $err = true;
-    echo '15 ';
+    echo '15n';
 }
 
 // Проверка, что аккаунта с такой эл почтой не существует
@@ -120,33 +120,3 @@ VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0', ?)");
         htmlspecialchars($form_data['postcode']), $code]);
 }
 ?>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<!-- логин пароль повторный пароль почта имя фамилия адрес индекс-->
-<form method="post">
-    <!-- лейблы к полям input сделай, Костя -->
-    Логин
-    <input type="text" name="login" value="" required><br/>
-    Пароль (может содержать только цифры и буквы латинского алфавита)
-    <input type="password" name="password" value="" required><br/>
-    Повтор пароля
-    <input type="password" name="password_repeat" value="" required><br/>
-    Эл. почта
-    <input type="email" name="email" value="" required><br/>
-    Имя и фамилия
-    <input type="text" name="name_and_surname" value="" required><br/>
-    Адрес
-    <input type="text" name="adres" value="" required><br/>
-    Почтовый индекс
-    <input type="text" name="postcode" value="" required><br/>
-    <button type="submit" name="submit_button">Отправить</button>
-</form>
-</body>
-</html>

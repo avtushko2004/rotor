@@ -216,7 +216,7 @@
                 <input class="input-auth" type="password" name="password" value="" autocomplete="on" required>  
         </form>
         <div class="btn-reg-cont">
-          <button type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
+          <button onclick="reg();" type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
         </div>
       </div>
     <div>
@@ -226,5 +226,6 @@
 <script src="scripts/menu.js"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
+<script src="scripts/ajax.js"></script>
 </body>
 </html>
