@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles/login.css">
   <title>Ротор-Про</title>
 </head>
-<body>
+<body ondragstart="drag(event)" style="opacity: 0;">
   <header>
     <div class="page-header">
       <!-- <div class="header-contacts">
@@ -120,7 +120,25 @@
             <button class="hit-product-more"><a>Узнать больше</a></button>
           </div>
         </div>
-        <div class="format-image-center">
+        <div class="format-product-center-container">
+          <div class="format-product-center">
+            <div class="hit-product-image"><img src="images/format1315.jpg" width="400px" height="220px"></div>
+            <div class="hit-product-title">Format 1315</div>
+            <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
+             Обладает высокой маневренностью и проста в использовании.</div>
+            <div class="hit-product-price">37500 RUB</div>
+            <button class="hit-product-more"><a>Узнать больше</a></button>
+          </div>
+          <div class="format-product-center">
+            <div class="hit-product-image"><img src="images/format1315.jpg" width="400px" height="220px"></div>
+            <div class="hit-product-title">Format 1315</div>
+            <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
+             Обладает высокой маневренностью и проста в использовании.</div>
+            <div class="hit-product-price">37500 RUB</div>
+            <button class="hit-product-more"><a>Узнать больше</a></button>
+          </div>
+        </div>
+        <!-- <div class="format-image-center">
           <h1 class="format-image-center-h1">Format Trail</h1>
           <img src="images/format-center-image.jpg" height="450px" width="600px">
           <p class="format-center-p">Format Trail-велосипеды предназначены для катания в горах или
@@ -129,7 +147,7 @@
                Более простая, чем у велосипедов серий Downhill и Enduro,
              конструкция без заднего амортизатора значительно снижает бюджет на покупку и содержание.</p>
            <button class="center-more-velo">Посмотреть все велосипеды Format</button>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="map">
@@ -177,11 +195,11 @@
           <div class="q-input-cont">  
             <div class="input-reg-cont"> 
               <label for="password" class="reg-label">Пароль</label>
-                <input class="input-reg" type="password" name="password" value="" required>
+                <input class="input-reg" type="password" name="password" value="" autocomplete="on" required>
             </div>
             <div class="input-reg-cont">  
               <label for="password_repeat" class="reg-label">Повтор пароля</label>
-                <input class="input-reg" type="password" name="password_repeat" value="" required>
+                <input class="input-reg" type="password" name="password_repeat" value="" autocomplete="on" required>
             </div>
             <div class="input-reg-cont">
               <label for="adres" class="reg-label">Адрес</label>
@@ -203,5 +221,6 @@
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/login.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>

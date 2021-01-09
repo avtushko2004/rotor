@@ -84,7 +84,7 @@ body{
   font-size:20px;
   background: url("https://img.icons8.com/material-sharp/24/000000/search.png") no-repeat center 75px;
   background-color: #ffffff;
-  cursor: pointer;
+  cursor: auto;
 }
 ::-webkit-input-placeholder {color:rgb(16, 56, 84, 0.18);}
 .menu-icon{
@@ -259,12 +259,11 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .format-product-center-container{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .format-product-center{
   display: flex;
@@ -358,3 +357,17 @@ body{
   font-size: 18px;
   margin-block-end: 0;
 }
+header{
+  user-select: none;
+}
+img{
+  user-select: none;
+}
+.body{
+  animation: load 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes load {
+  from { opacity: 0; }
+  to { opacity: 1; }
+ }
