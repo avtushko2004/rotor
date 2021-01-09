@@ -15,7 +15,6 @@ const blurPage = (props) => {
         body.style.overflowY = "hidden";
     }
 }
-
 function authMake(){
     document.getElementById('reg-form').style.display = "none";
     document.getElementById('auth-form').style.display = "flex";
