@@ -154,8 +154,7 @@
         <div class="adres-footer-container">
           <p class="zag-center-footer">Адреса наших магазинов:</p>
           <div class="footer-adres">
-            <div class="span-footer-adres">г. Новополоцк, ул. Калинина 20,</div>
-            <div class="span-footer-adres">г. Полоцк, р. Северный, ул. Строительная 19</div>
+            <div class="span-footer-adres">г. Новополоцк, ул. Калинина 20, г. Полоцк, р. Северный, ул. Строительная 19</div>
       </div>
         </div>
         <div class="contacts-footer-container">
