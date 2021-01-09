@@ -58,7 +58,7 @@
         </div>
         <div class="main-video-text">
           <!--<h1 class="zag-main-video">Ротор-Про</h1>-->
-          <h1 class="h1-main-video-text">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
+          <h1 class="h1-main-video-text unselectable">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@
           <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
            Обладает высокой маневренностью и проста в использовании.</div>
           <div class="hit-product-price">12990 RUB</div>
-          <button class="hit-product-more"><a>Узнать больше</a></button>
+          <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
         </div>
         <div class="hit-product">
           <div class="hit-product-image"><img srcset="//hqvcdn3.azureedge.net/qs_mh=300&mw=750&ver=20210106T140546&hcsh=59BFD19B1FDA5ADCEBF0CA0CA5E9C5C5/_$$_/media/aprimo/husqvarna/chainsaws/photos/studio/h110-05xxxx/h110-0522.png" width="400px" ></div>
@@ -81,7 +81,7 @@
           <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
            Обладает высокой маневренностью и проста в использовании.</div>
           <div class="hit-product-price">12990 RUB</div>
-          <button class="hit-product-more"><a>Узнать больше</a></button>
+          <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
         </div>
         <div class="hit-product">
           <div class="hit-product-image"><img srcset="//hqvcdn3.azureedge.net/qs_mh=300&mw=750&ver=20210106T140546&hcsh=59BFD19B1FDA5ADCEBF0CA0CA5E9C5C5/_$$_/media/aprimo/husqvarna/chainsaws/photos/studio/h110-05xxxx/h110-0522.png" width="400px" ></div>
@@ -89,7 +89,7 @@
           <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
            Обладает высокой маневренностью и проста в использовании.</div>
           <div class="hit-product-price">12990 RUB</div>
-          <button class="hit-product-more"><a>Узнать больше</a></button>
+          <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
         </div>
       </div>
     </section>
@@ -104,7 +104,7 @@
             <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
              Обладает высокой маневренностью и проста в использовании.</div>
             <div class="hit-product-price">37500 RUB</div>
-            <button class="hit-product-more"><a>Узнать больше</a></button>
+            <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
           </div>
           <div class="format-product-center">
             <div class="hit-product-image"><img src="images/format1315.jpg" width="400px" height="220px"></div>
@@ -112,7 +112,7 @@
             <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
              Обладает высокой маневренностью и проста в использовании.</div>
             <div class="hit-product-price">37500 RUB</div>
-            <button class="hit-product-more"><a>Узнать больше</a></button>
+            <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
           </div>
         </div>
         <div class="format-product-center-container">
@@ -122,7 +122,7 @@
             <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
              Обладает высокой маневренностью и проста в использовании.</div>
             <div class="hit-product-price">37500 RUB</div>
-            <button class="hit-product-more"><a>Узнать больше</a></button>
+            <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
           </div>
           <div class="format-product-center">
             <div class="hit-product-image"><img src="images/format1315.jpg" width="400px" height="220px"></div>
@@ -130,7 +130,7 @@
             <div class="hit-product-subtitle">Отличная модель для бытовых нужд.
              Обладает высокой маневренностью и проста в использовании.</div>
             <div class="hit-product-price">37500 RUB</div>
-            <button class="hit-product-more"><a>Узнать больше</a></button>
+            <button class="hit-product-more unselectable"><a>Узнать больше</a></button>
           </div>
         </div>
         <!-- <div class="format-image-center">
@@ -168,8 +168,8 @@
   <div class="displayWindow" id="login">
   <div class="popup-cont">
   <div class="h1-popup">
-  <h1 class="reg-h1-popup" id="auth-h1" onclick="regMake()">Регистрация</h1> 
-  <h1 class="auth-h1-popup disabled-h1" id="reg-h1" onclick="authMake()">Войти</h1>
+  <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1> 
+  <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>
   </div>
         <form method="post" class="form-reg" id="reg-form">
           <div class="q-input-cont">  
@@ -216,7 +216,7 @@
                 <input class="input-auth" type="password" name="password" value="" autocomplete="on" required>  
         </form>
         <div class="btn-reg-cont">
-          <button type="submit" name="submit_button" class="reg-submit" id="submit-btn">Зарегестрироваться</button>
+          <button type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
         </div>
       </div>
     <div>
