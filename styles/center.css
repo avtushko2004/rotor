@@ -165,7 +165,7 @@ body{
 }
 .video-cont{
   overflow: hidden;
-  max-height: 86vh;
+  height: 86vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@ body{
 .video-contrl{
   z-index: 1;
   overflow: hidden;
-  max-height: 86vh;
+  height: 86vh;
   display: flex;
   align-items: center;
   justify-content: center;
