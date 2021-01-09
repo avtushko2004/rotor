@@ -176,39 +176,39 @@
           <div class="q-input-cont">
           <!-- <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1>    -->
             <div class="input-reg-cont">
-              <label for="login" class="reg-label">Логин</label>
-                <input class="input-reg" type="text" name="login" value="" required>
+   
+                <input class="input-reg" type="text" name="login" value="" placeholder="Логин" required>
             </div>
             <div class="input-reg-cont">
-              <label for="email" class="reg-label">Эл. почта</label>
-                <input class="input-reg" type="email" name="email" value="" required>
+       
+                <input class="input-reg" type="email" name="email" value="" placeholder="Эл. почта" required>
             </div>
             <div class="input-reg-cont">
-              <label for="name" class="reg-label">Имя</label>
-                <input class="input-reg" type="text" name="name" value="" required>
+
+                <input class="input-reg" type="text" name="name" value="" placeholder="Имя" required>
             </div>
            <div class="input-reg-cont">
-              <label for="surname" class="reg-label">Фамилия</label>
-                <input class="input-reg" type="text" name="surname" value="" required>
+       
+                <input class="input-reg" type="text" name="surname" value="" placeholder="Фамилия" required>
             </div>
           </div>  
           <div class="q-input-cont">
           <!-- <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>   -->
             <div class="input-reg-cont"> 
-              <label for="password" class="reg-label">Пароль</label>
-                <input class="input-reg" type="password" name="password" value="" autocomplete="on" required>
+       
+                <input class="input-reg" type="password" name="password" value="" autocomplete="on" placeholder="Пароль" required>
             </div>
             <div class="input-reg-cont">  
-              <label for="password_repeat" class="reg-label">Повтор пароля</label>
-                <input class="input-reg" type="password" name="password_repeat" value="" autocomplete="on" required>
+
+                <input class="input-reg" type="password" name="password_repeat" value="" autocomplete="on" placeholder="Повтор пароля" required>
             </div>
             <div class="input-reg-cont">
-              <label for="adres" class="reg-label">Адрес</label>
-                <input class="input-reg" type="text" name="adres" value="" required>
+   
+                <input class="input-reg" type="text" name="adres" value="" placeholder="Адрес" required>
             </div>
             <div class="input-reg-cont">
-              <label for="postcode" class="reg-label">Почтовый индекс</label>
-                <input class="input-reg" type="text" name="postcode" value="" required>
+              
+                <input class="input-reg" type="text" name="postcode" value="" placeholder="Почтовый индекс" required>
             </div>
           </div>
           </div>

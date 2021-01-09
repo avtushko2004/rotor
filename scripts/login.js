@@ -9,6 +9,8 @@ const blurPage = (props) => {
         header.classList.toggle('blurWindow');
         body.style.overflowY = "visible";
     }else{
+        login.style.animation = "blurPage 0.5s";
+        login.style.animationFillMode = "forwards";
         login.classList.toggle('displayWindow');
         main.classList.toggle('blurWindow');
         header.classList.toggle('blurWindow');
