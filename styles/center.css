@@ -178,7 +178,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1519px) {
+@media screen and (min-width: 1905px) {
   .video-contrl{
     height: auto;
   }
