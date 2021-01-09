@@ -21,7 +21,7 @@ let regForm = document.getElementById('reg-form');
 let authForm = document.getElementById('auth-form');
 let regButton = document.getElementById('submit-btn');
 let goAuth = document.getElementById('go-auth');
-let goReg = document.getElementsByClassName('.go-reg');
+let goReg = document.getElementsByClassName('go-reg')[0];
 
 function authMake(){
     console.log("антон рак");
