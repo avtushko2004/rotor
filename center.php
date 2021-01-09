@@ -245,5 +245,13 @@
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/ajax.js"></script>
+  <script>
+                      document.getElementsByClassName('popup-cont')[0].style.display = "none";
+                        document.getElementsByClassName('lds-ring')[0].style.display = "block";
+                        setTimeout(function tick() {
+                            document.getElementsByClassName('lds-ring')[0].style.display = "none";
+                            document.getElementsByClassName('mailCode')[0].style.display = "block";
+                        }, 1000);
+  </script>
 </body>
 </html>

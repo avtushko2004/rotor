@@ -44,11 +44,11 @@
 }
   .confirmation-code-input{
     margin-top: 5%;
-    width: 30%;
+    width: 50%;
     height: 100%;
-    font-size: 3.5em;
+    font-size: 3em;
     border:2px solid rgb(16, 56, 84);
-    border-radius: 2em;
+    border-radius: 1em;
     outline: none;
     color: rgb(16, 56, 84);
   }
