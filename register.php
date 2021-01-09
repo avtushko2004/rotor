@@ -113,10 +113,10 @@ if (!$err) {
     echo json_encode($a);
     // Записываем в бд данные, confirmation = 'false'
     $pr = $db->prepare("INSERT INTO `users` (`id`, `login`, `password`, `email`, `name`, `surname`, `address`, `postcode`, `confirmation`) 
-VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0')");
+VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0', ?)");
     $pr->execute([htmlspecialchars($form_data['login']), hash('sha256', $form_data['password']), htmlspecialchars($form_data['email']),
         htmlspecialchars($form_data['name']), htmlspecialchars($form_data['surname']), htmlspecialchars($form_data['address']),
-        htmlspecialchars($form_data['postcode'])]);
+        htmlspecialchars($form_data['postcode']), $code]);
 }
 ?>
 <!DOCTYPE html>
