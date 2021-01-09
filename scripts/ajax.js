@@ -16,11 +16,20 @@ const reg = () => {
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
         if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-           let res = xhr.responseText;
-           res = res.split("n");
-           for(i in res){
-               console.log(codes[i] + '\n');
-           }
+            if (xhr.responseText == "16") {
+                console.log(codes[16]);
+            }else{
+                try {
+                    let json = JSON.parse(xhr.responseText);  
+                    console.log(json); 
+                } catch (error) {
+                    let res = xhr.responseText;
+                    res = res.split("n");
+                    for(i in res){
+                        console.log(codes[i] + '\n');
+                    }
+                }
+            }
         }
     }
     xhr.send(request);
