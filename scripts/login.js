@@ -33,7 +33,6 @@ function authMake(){
     regButton.classList.add('auth-btn');
     regButton.classList.remove('reg-btn');
     regButton.innerText = "Войти";
-
 }
 function regMake(){
     console.log("антон рак");

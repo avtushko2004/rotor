@@ -223,7 +223,7 @@
         <div class="btn-reg-cont">
           <button onclick="reg();" type="submit" name="submit_button" class="reg-submit unselectable" id="submit-btn">Зарегестрироваться</button>
           <p class="go-auth" id="go-auth">Уже есть аккаунт? <a class="go-auth-a" onclick="authMake()">Войти</a></p>
-          <p class="go-reg" id="go-reg">Нет аккаунта? <a class="go-reg-a" onclick="regMake()">Зарегестрироваться</a></p>
+          <p class="go-reg" id="go-reg">Нет аккаунта? <a class="go-reg-a" onclick="regMake()">Зарегистрироваться</a></p>
         </div>
       </div>
     <div>
@@ -233,12 +233,20 @@
     <div style="display:none;" class="lds-ring"><div></div><div></div><div></div><div></div></div>
   </center>
   <div style="display:none;" class="mailCode">
-        <center><h1>форма с кодом</h1></center>
+        <h1></h1>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/ajax.js"></script>
+<!-- <script>
+                      document.getElementsByClassName('popup-cont')[0].style.display = "none";
+                        document.getElementsByClassName('lds-ring')[0].style.display = "block";
+                        setTimeout(function tick() {
+                            document.getElementsByClassName('lds-ring')[0].style.display = "none";
+                            document.getElementsByClassName('mailCode')[0].style.display = "block";
+                        }, 1000);
+  </script> -->
 </body>
 </html>
