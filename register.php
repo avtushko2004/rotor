@@ -1,15 +1,7 @@
 <?php
+
 require('base.php');
-function generateRandomString($length = 6)
-{
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
+
 
 if ($_POST !== []) {
     // тут данные с формы регистрации
@@ -104,9 +96,18 @@ if ($_POST !== []) {
     }
 
 }
-// Если ошибок нет генерируем код, хешируем его и отправляем в json как ответ, также отправляем письмо с кодом на почту.
+// Если ошибок нет генерируем код, хешируем его и отправляем в json как ответ, проверяем, что такого кода нет , также отправляем письмо с кодом на почту.
 if (!$err) {
     $code = generateRandomString();
+    while (true) {
+        $pr = $db->prepare("SELECT * FROM `users` WHERE `code` = ?");
+        $pr->execute([$code]);
+        if ($pr->fetchAll() === []){
+            break;
+        } else {
+            $code = generateRandomString();
+        }
+    }
     mail($form_data['email'], 'Rotor.pro', $code);
     $code = hash('sha256', $code);
     $a = ['false', $code];
