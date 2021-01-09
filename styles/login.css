@@ -157,3 +157,25 @@
 .enable{
 	display: block !important;
 }
+.confirmation-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.registration-confirmation-p{
+  text-align: center;
+  font-size: 1.5em;
+}
+  .confirmation-code-input{
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+    font-size: 3em;
+    border:2px solid rgb(16, 56, 84);
+    border-radius: 1em;
+    outline: none;
+    color: rgb(16, 56, 84);
+  }
+  .mailCode{
+	  text-align: center;
+  }
