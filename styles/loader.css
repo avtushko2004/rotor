@@ -33,4 +33,22 @@
       transform: rotate(360deg);
     }
   }
-  
+  .confirmation-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.registration-confirmation-p{
+  text-align: center;
+  font-size: 1.5em;
+}
+  .confirmation-code-input{
+    margin-top: 5%;
+    width: 30%;
+    height: 100%;
+    font-size: 3.5em;
+    border:2px solid rgb(16, 56, 84);
+    border-radius: 2em;
+    outline: none;
+    color: rgb(16, 56, 84);
+  }

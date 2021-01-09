@@ -233,20 +233,25 @@
     <div style="display:none;" class="lds-ring"><div></div><div></div><div></div><div></div></div>
   </center>
   <div style="display:none;" class="mailCode">
-        <h1></h1>
+        <div class="confirmation-cont">
+          <h1>Подтвердите регистрацию</h1>
+            <p class="registration-confirmation-p">Вам на почту пришёл код подтверждения,
+            пожалуйста запишите его в форму</p>
+          <input type="text" class="confirmation-code-input">
+        </div>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/ajax.js"></script>
-<!-- <script>
+  <script>
                       document.getElementsByClassName('popup-cont')[0].style.display = "none";
                         document.getElementsByClassName('lds-ring')[0].style.display = "block";
                         setTimeout(function tick() {
                             document.getElementsByClassName('lds-ring')[0].style.display = "none";
                             document.getElementsByClassName('mailCode')[0].style.display = "block";
                         }, 1000);
-  </script> -->
+  </script>
 </body>
 </html>
