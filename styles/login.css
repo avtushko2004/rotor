@@ -19,9 +19,15 @@
 	display: flex;
 	flex-direction: column;
 }
-.reg-h1-popup{
+.disabled-h1{
+	color:#B8B8B8;
+	cursor: pointer;
+}
+.h1-popup{
+	display: flex;
+	justify-content: space-around;
 	font-weight: 500;
-	text-align: center;
+	align-items: center;
 }
 .popup-cont{
 	display: flex;
@@ -33,6 +39,11 @@
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
+}
+.form-auth{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 .q-input-cont{
 	display: flex;
@@ -49,8 +60,13 @@
 	font-size: 22px;
 	margin-left:3%;
 }
+.auth-label{
+	font-size: 22px;
+	margin-left:1%;
+	margin-top: 7%;
+}
 .btn-reg-cont{
-	margin-top: 5%;
+	margin-top: 2%;
 	display: flex;
 	justify-content: center;
 }
@@ -59,6 +75,16 @@
 	height: 2.5em;
 	border-radius: 3em;
 	margin-top: 3%;
+	border:2px solid rgb(16, 56, 84);
+	outline: none;
+	font-size: 16px;
+	padding-left: 5%;
+}
+.input-auth{
+	width: 14em;
+	height: 2.5em;
+	border-radius: 3em;
+	margin-top: 1%;
 	border:2px solid rgb(16, 56, 84);
 	outline: none;
 	font-size: 16px;
@@ -74,6 +100,12 @@
 	border:0;
 	outline: none;
 	cursor: pointer;
+}
+.auth-btn{
+	margin-top: 8%;
+}
+.disabled-form{
+	display: none;
 }
 .close {
     position: absolute;
