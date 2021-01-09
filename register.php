@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('mysql:dbname=rotor.pro;host=127.0.0.1:3306', 'root', 'root');
+require('base.php');
 function generateRandomString($length = 6)
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

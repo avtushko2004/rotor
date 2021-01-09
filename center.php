@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Антон рак -->
 <html lang="ru">
@@ -15,13 +16,12 @@
 <body>
   <header>
     <div class="page-header">
-      <div class="header-contacts">
-        <p class="p-header-adres">г.Новополоцк ул.Калинина 20</p> 
-        <p class="p-header-num-n-email">
-          <span class="header-tel">+375-33-344-14-00</span>
-          <span class="header-email">rotor-pro@rotor-pro.by</span>
-        </p>
-      </div>
+      <!-- <div class="header-contacts">
+        <p class="p-header-adres">г.Новополоцк ул.Калинина 20</p>
+        <img src="images/instagram-6-32.ico" width="26px" height="26px"/>
+        <img src="images/vk-32.ico" width="26px" height="26px"/>
+        <p class="p-header-num-n-email"><span class="header-tel">+375-33-344-14-00</span><span class="header-email">rotor-pro@rotor-pro.by</span></p>
+      </div> -->
       <div class="upper-header">
         <div class="search-n-name-cont">
           <a href="center.php" class="a-logo"><h1 class="logo-text">ROTOR.PRO</h1></a>
@@ -153,6 +153,50 @@
   </section>
   </main>
   <div class="displayWindow" id="login">
+  <div class="popup-cont">
+  <h1 class="reg-h1-popup">Регистрация</h1>
+        <form method="post" class="form-reg">
+          <div class="q-input-cont">  
+            <div class="input-reg-cont">
+              <label for="login" class="reg-label">Логин</label>
+                <input class="input-reg" type="text" name="login" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="email" class="reg-label">Эл. почта</label>
+                <input class="input-reg" type="email" name="email" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="name" class="reg-label">Имя</label>
+                <input class="input-reg" type="text" name="name" value="" required>
+            </div>
+           <div class="input-reg-cont">
+              <label for="surname" class="reg-label">Фамилия</label>
+                <input class="input-reg" type="text" name="surname" value="" required>
+            </div>
+          </div>  
+          <div class="q-input-cont">  
+            <div class="input-reg-cont"> 
+              <label for="password" class="reg-label">Пароль</label>
+                <input class="input-reg" type="password" name="password" value="" required>
+            </div>
+            <div class="input-reg-cont">  
+              <label for="password_repeat" class="reg-label">Повтор пароля</label>
+                <input class="input-reg" type="password" name="password_repeat" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="adres" class="reg-label">Адрес</label>
+                <input class="input-reg" type="text" name="adres" value="" required>
+            </div>
+            <div class="input-reg-cont">
+              <label for="postcode" class="reg-label">Почтовый индекс</label>
+                <input class="input-reg" type="text" name="postcode" value="" required>
+            </div>
+          </div>
+        </form>
+        <div class="btn-reg-cont">
+          <button type="submit" name="submit_button" class="reg-submit">Зарегестрироваться</button>
+        </div>
+      </div>
     <div>
      <span href="#" class="close" onclick="blurPage('unblur')"></span>
   </div>
