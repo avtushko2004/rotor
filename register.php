@@ -89,12 +89,10 @@ if (iconv_strlen(trim($form_data['postcode'])) > 20) {
 // Проверка, что аккаунта с такой эл почтой не существует
 $pr = $db->prepare('SELECT * FROM `users` WHERE `email` = ?');
 $pr->execute([$form_data['email']]);
-if ($pr->fetchAll() !== []){
+if ($pr->fetchAll() !== []) {
     $err = true;
     echo '16';
 }
-
-
 
 
 // Если ошибок нет генерируем код, хешируем его и отправляем в json как ответ, проверяем, что такого кода нет , также отправляем письмо с кодом на почту.
@@ -103,7 +101,7 @@ if (!$err) {
     while (true) {
         $pr = $db->prepare("SELECT * FROM `users` WHERE `code` = ?");
         $pr->execute([$code]);
-        if ($pr->fetchAll() === []){
+        if ($pr->fetchAll() === []) {
             break;
         } else {
             $code = generateRandomString();
@@ -114,8 +112,8 @@ if (!$err) {
     $a = ['false', $code];
     echo json_encode($a);
     // Записываем в бд данные, confirmation = 'false'
-    $pr = $db->prepare("INSERT INTO `users` (`id`, `login`, `password`, `email`, `name`, `surname`, `address`, `postcode`, `confirmation`) 
-VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0', ?)");
+    $pr = $db->prepare("INSERT INTO `users` (`id`, `login`, `password`, `email`, `name`, `surname`, `address`, `postcode`, `confirmation`, `code`, `secret`) 
+VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, '0', ?, NULL )");
     $pr->execute([htmlspecialchars($form_data['login']), hash('sha256', $form_data['password']), htmlspecialchars($form_data['email']),
         htmlspecialchars($form_data['name']), htmlspecialchars($form_data['surname']), htmlspecialchars($form_data['address']),
         htmlspecialchars($form_data['postcode']), $code]);
