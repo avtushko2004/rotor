@@ -1,101 +1,101 @@
 <?php
 
 require('base.php');
+// тут данные с формы регистрации
 
+$form_data = json_decode(file_get_contents("php://input"));
 
-if ($_POST !== []) {
-    // тут данные с формы регистрации
-    $form_data = $_POST;
-
-    $err = false;
-    // Вывод на страницу для отладки
-    // Проверка логина
-    if (trim($form_data['login']) === '') {
-        $err = true;
-        echo '0 ';
-    }
-    if (iconv_strlen(trim($form_data['login'])) < 6) {
-        $err = true;
-        echo '1 ';
-    }
-
-    // Проверка пароля
-    if (trim($form_data['password']) === '') {
-        $err = true;
-        echo '2 ';
-    }
-    if (!ctype_alnum($form_data['password'])) {
-        $err = true;
-        echo '3 ';
-    }
-    if (iconv_strlen($form_data['password']) < 8) {
-        $err = true;
-        echo '4 ';
-    }
-    if ($form_data['password'] !== $form_data['password_repeat']) {
-        $err = true;
-        echo '5 ';
-    }
-
-    // Проверка эл. почты
-    if (trim($form_data['email']) === '') {
-        $err = true;
-        echo '6 ';
-    }
-    if (filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
-        $err = true;
-        echo '7 ';
-    }
-
-    // Проверка имени
-    if (trim($form_data['name']) === '') {
-        $err = true;
-        echo '8 ';
-    }
-    if (iconv_strlen(trim($form_data['name'])) > 16) {
-        $err = true;
-        echo '9 ';
-    }
-
-    // Проверка фамилии
-    if (trim($form_data['surname']) === '') {
-        $err = true;
-        echo '10 ';
-    }
-    if (iconv_strlen(trim($form_data['surname'])) > 16) {
-        $err = true;
-        echo '11 ';
-    }
-
-    // Проверка адреса
-    if (trim($form_data['address']) === '') {
-        $err = true;
-        echo '12 ';
-    }
-    if (iconv_strlen(trim($form_data['address'])) > 100) {
-        $err = true;
-        echo '13 ';
-    }
-
-    // Проверка почтового индекса
-    if (trim($form_data['postcode']) === '') {
-        $err = true;
-        echo '14 ';
-    }
-    if (iconv_strlen(trim($form_data['postcode'])) > 20) {
-        $err = true;
-        echo '15 ';
-    }
-
-    // Проверка, что аккаунта с такой эл почтой не существует
-    $pr = $db->prepare('SELECT * FROM `users` WHERE `email` = ?');
-    $pr->execute([$form_data['email']]);
-    if ($pr->fetchAll() !== []){
-        $err = true;
-        echo '16';
-    }
-
+$err = false;
+// Вывод на страницу для отладки
+// Проверка логина
+if (trim($form_data['login']) === '') {
+    $err = true;
+    echo '0 ';
 }
+if (iconv_strlen(trim($form_data['login'])) < 6) {
+    $err = true;
+    echo '1 ';
+}
+
+// Проверка пароля
+if (trim($form_data['password']) === '') {
+    $err = true;
+    echo '2 ';
+}
+if (!ctype_alnum($form_data['password'])) {
+    $err = true;
+    echo '3 ';
+}
+if (iconv_strlen($form_data['password']) < 8) {
+    $err = true;
+    echo '4 ';
+}
+if ($form_data['password'] !== $form_data['password_repeat']) {
+    $err = true;
+    echo '5 ';
+}
+
+// Проверка эл. почты
+if (trim($form_data['email']) === '') {
+    $err = true;
+    echo '6 ';
+}
+if (filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
+    $err = true;
+    echo '7 ';
+}
+
+// Проверка имени
+if (trim($form_data['name']) === '') {
+    $err = true;
+    echo '8 ';
+}
+if (iconv_strlen(trim($form_data['name'])) > 16) {
+    $err = true;
+    echo '9 ';
+}
+
+// Проверка фамилии
+if (trim($form_data['surname']) === '') {
+    $err = true;
+    echo '10 ';
+}
+if (iconv_strlen(trim($form_data['surname'])) > 16) {
+    $err = true;
+    echo '11 ';
+}
+
+// Проверка адреса
+if (trim($form_data['address']) === '') {
+    $err = true;
+    echo '12 ';
+}
+if (iconv_strlen(trim($form_data['address'])) > 100) {
+    $err = true;
+    echo '13 ';
+}
+
+// Проверка почтового индекса
+if (trim($form_data['postcode']) === '') {
+    $err = true;
+    echo '14 ';
+}
+if (iconv_strlen(trim($form_data['postcode'])) > 20) {
+    $err = true;
+    echo '15 ';
+}
+
+// Проверка, что аккаунта с такой эл почтой не существует
+$pr = $db->prepare('SELECT * FROM `users` WHERE `email` = ?');
+$pr->execute([$form_data['email']]);
+if ($pr->fetchAll() !== []){
+    $err = true;
+    echo '16';
+}
+
+
+
+
 // Если ошибок нет генерируем код, хешируем его и отправляем в json как ответ, проверяем, что такого кода нет , также отправляем письмо с кодом на почту.
 if (!$err) {
     $code = generateRandomString();
