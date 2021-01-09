@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <!-- Антон рак -->
 <html lang="ru">
 <head>
@@ -39,13 +38,13 @@
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
           </div>
           <div class="main-product-menu">
-            <div class="position-product-menu-1"><div class="arrow arrow-left"></div>Husqvarna</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Садовые инструменты</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Садовая техника</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Велосипеды</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Товары для дома</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Электроинструмент</div>
-            <div class="position-product-menu-last"><div class="arrow arrow-left"></div>Бренды</div>
+            <div class="position-product-menu-1"><i class="left"></i>Husqvarna</div>
+            <div class="position-product-menu"><i class="left"></i>Садовые инструменты</div>
+            <div class="position-product-menu"><i class="left"></i>Садовая техника</div>
+            <div class="position-product-menu"><i class="left"></i>Велосипеды</div>
+            <div class="position-product-menu"><i class="left"></i>Товары для дома</div>
+            <div class="position-product-menu"><i class="left"></i>Электроинструмент</div>
+            <div class="position-product-menu-last"><i class="left"></i>Бренды</div>
           </div>
         </div>
       </div>
@@ -61,11 +60,6 @@
           <!--<h1 class="zag-main-video">Ротор-Про</h1>-->
           <h1 class="h1-main-video-text">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
         </div>
-      </div>
-    </section>
-    <section class="reg-pop-sec">
-      <div class="popup">
-
       </div>
     </section>
     <section class="main-hit-prod">
