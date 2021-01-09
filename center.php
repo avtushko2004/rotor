@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="icon.png" type="image/png">
   <link rel="stylesheet" href="styles/center.css">
   <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/loader.css">
   <title>Ротор-Про</title>
 </head>
 <body ondragstart="drag(event)" style="opacity: 0;">
@@ -220,6 +221,12 @@
       </div>
     <div>
      <span href="#" class="close" onclick="blurPage('unblur')"></span>
+  </div>
+  <center>
+    <div style="display:none;" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </center>
+  <div style="display:none;" class="mailCode">
+        <center><h1>форма с кодом</h1></center>
   </div>
 <script src="scripts/header-scrol.js"></script>
 <script src="scripts/menu.js"></script>

@@ -5,3 +5,7 @@ const loadPage = () =>{
     document.getElementsByTagName('body')[0].classList.add('body');
 }
 document.addEventListener("DOMContentLoaded", loadPage);
+
+//Cookie
+//Скоро..
+//Cookie (end)

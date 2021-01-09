@@ -21,7 +21,14 @@ const reg = () => {
             }else{
                 try {
                     let json = JSON.parse(xhr.responseText);  
-                    console.log(json); 
+                    if (json[0] == 'false') {
+                        document.getElementsByClassName('popup-cont')[0].style.display = "none";
+                        document.getElementsByClassName('lds-ring')[0].style.display = "block";
+                        setTimeout(function tick() {
+                            document.getElementsByClassName('lds-ring')[0].style.display = "none";
+                            document.getElementsByClassName('mailCode')[0].style.display = "block";
+                        }, 1000);
+                    }
                 } catch (error) {
                     let res = xhr.responseText;
                     res = res.split("n");
