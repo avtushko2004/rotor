@@ -178,6 +178,14 @@ body{
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1519px) {
+  .video-contrl{
+    height: auto;
+  }
+  .video-cont{
+    height: auto;
+  }
+}
 .main-video-text{
   position: absolute;
   z-index: 2;
