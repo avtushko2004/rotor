@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Дарова костян -->
-<html lang="en">
+<!-- Антон рак -->
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,11 @@
   <header>
     <div class="page-header">
       <div class="header-contacts">
-        <p class="p-header-adres">г.Новополоцк ул.Калинина 20</p>
-        <img src="images/instagram-6-32.ico" width="26px" height="26px"/>
-        <img src="images/vk-32.ico" width="26px" height="26px"/>
-        <p class="p-header-num-n-email"><span class="header-tel">+375-33-344-14-00</span><span class="header-email">rotor-pro@rotor-pro.by</span></p>
+        <p class="p-header-adres">г.Новополоцк ул.Калинина 20</p> 
+        <p class="p-header-num-n-email">
+          <span class="header-tel">+375-33-344-14-00</span>
+          <span class="header-email">rotor-pro@rotor-pro.by</span>
+        </p>
       </div>
       <div class="upper-header">
         <div class="search-n-name-cont">
@@ -139,10 +140,10 @@
       <footer class="page-footer">
         <div class="adres-footer-container">
           <p class="zag-center-footer">Адреса наших магазинов:</p>
-          <p class="footer-adres">
-            <span class="span-footer-adres">г. Новополоцк, улица Калинина 20,</span>
-            <span class="span-footer-adres">г. Полоцк, рынок Северный, улица Строительная 19</span>
-          </p>
+          <div class="footer-adres">
+            <div class="span-footer-adres">г. Новополоцк, ул. Калинина 20,</div>
+            <div class="span-footer-adres">г. Полоцк, р. Северный, ул. Строительная 19</div>
+      </div>
         </div>
         <div class="contacts-footer-container">
           <p class="contacts-footer-tel">Номер телефона: +375-33-344-14-00</p>
