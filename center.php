@@ -58,7 +58,7 @@
         </div>
         <div class="main-video-text">
           <!--<h1 class="zag-main-video">Ротор-Про</h1>-->
-          <h1 class="h1-main-video-text">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
+          <h1 class="h1-main-video-text unselectable">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
         </div>
       </div>
     </section>
