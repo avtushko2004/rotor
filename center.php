@@ -166,12 +166,13 @@
   </main>
   <div class="displayWindow" id="login">
   <div class="popup-cont">
-  <div class="h1-popup">
+  <!-- <div class="h1-popup">
   <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1> 
   <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>
-  </div>
+  </div> -->
         <form method="post" class="form-reg" id="reg-form">
-          <div class="q-input-cont">  
+          <div class="q-input-cont">
+          <h1 class="reg-h1-popup unselectable" id="auth-h1" onclick="regMake()">Регистрация</h1>   
             <div class="input-reg-cont">
               <label for="login" class="reg-label">Логин</label>
                 <input class="input-reg" type="text" name="login" value="" required>
@@ -189,7 +190,8 @@
                 <input class="input-reg" type="text" name="surname" value="" required>
             </div>
           </div>  
-          <div class="q-input-cont">  
+          <div class="q-input-cont">
+          <h1 class="auth-h1-popup disabled-h1 unselectable" id="reg-h1" onclick="authMake()">Войти</h1>  
             <div class="input-reg-cont"> 
               <label for="password" class="reg-label">Пароль</label>
                 <input class="input-reg" type="password" name="password" value="" autocomplete="on" required>
