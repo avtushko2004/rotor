@@ -101,7 +101,7 @@
 .go-auth{
 	display: block;
 }
-.go-auth-a{
+.go-auth-a, .go-reg-a{
 	color:rgb(16, 56, 84);
 	cursor: pointer;
 }
