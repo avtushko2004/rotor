@@ -17,3 +17,31 @@ const blurPage = (props) => {
         body.style.overflowY = "hidden";
     }
 }
+let regLabel = document.getElementById('reg-h1');
+let authLabel = document.getElementById('auth-h1');
+let regForm = document.getElementById('reg-form');
+let authForm = document.getElementById('auth-form');
+let regButton = document.getElementById('submit-btn');
+
+
+
+function authMake(){
+    console.log("антон рак");
+    regLabel.classList.remove('disabled-h1');
+    authLabel.classList.add('disabled-h1');
+    regForm.classList.add('disabled-form');
+    authForm.classList.remove('disabled-form');
+    regButton.classList.add('auth-btn');
+    regButton.classList.remove('reg-btn');
+    regButton.innerText = "Войти";
+}
+function regMake(){
+    console.log("антон рак");
+    regLabel.classList.add('disabled-h1');
+    authLabel.classList.remove('disabled-h1');
+    regForm.classList.remove('disabled-form');
+    authForm.classList.add('disabled-form');
+    regButton.classList.remove('auth-btn');
+    regButton.classList.add('reg-btn');
+    regButton.innerText = "Зарегистрироваться";
+}

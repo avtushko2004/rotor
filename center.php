@@ -38,13 +38,13 @@
             <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
           </div>
           <div class="main-product-menu">
-            <div class="position-product-menu-1"><div class="arrow arrow-left"></div>Husqvarna</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Садовые инструменты</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Садовая техника</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Велосипеды</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Товары для дома</div>
-            <div class="position-product-menu"><div class="arrow arrow-left"></div>Электроинструмент</div>
-            <div class="position-product-menu-last"><div class="arrow arrow-left"></div>Бренды</div>
+            <div class="position-product-menu-1"><i class="left"></i>Husqvarna</div>
+            <div class="position-product-menu"><i class="left"></i>Садовые инструменты</div>
+            <div class="position-product-menu"><i class="left"></i>Садовая техника</div>
+            <div class="position-product-menu"><i class="left"></i>Велосипеды</div>
+            <div class="position-product-menu"><i class="left"></i>Товары для дома</div>
+            <div class="position-product-menu"><i class="left"></i>Электроинструмент</div>
+            <div class="position-product-menu-last"><i class="left"></i>Бренды</div>
           </div>
         </div>
       </div>
@@ -60,11 +60,6 @@
           <!--<h1 class="zag-main-video">Ротор-Про</h1>-->
           <h1 class="h1-main-video-text">Официальный дилер Husqvarna и крупный магазин велосипедов</h1>
         </div>
-      </div>
-    </section>
-    <section class="reg-pop-sec">
-      <div class="popup">
-
       </div>
     </section>
     <section class="main-hit-prod">
@@ -172,8 +167,11 @@
   </main>
   <div class="displayWindow" id="login">
   <div class="popup-cont">
-  <h1 class="reg-h1-popup">Регистрация</h1>
-        <form method="post" class="form-reg">
+  <div class="h1-popup">
+  <h1 class="reg-h1-popup" id="auth-h1" onclick="regMake()">Регистрация</h1> 
+  <h1 class="auth-h1-popup disabled-h1" id="reg-h1" onclick="authMake()">Войти</h1>
+  </div>
+        <form method="post" class="form-reg" id="reg-form">
           <div class="q-input-cont">  
             <div class="input-reg-cont">
               <label for="login" class="reg-label">Логин</label>
@@ -211,8 +209,14 @@
             </div>
           </div>
         </form>
+        <form method="post" class="form-auth disabled-form" id="auth-form">
+            <label for="email" class="auth-label">Эл. почта</label>
+              <input input class="input-auth" type="email" name="email" value="" required>
+            <label for="password" class="auth-label">Пароль</label>
+                <input class="input-auth" type="password" name="password" value="" autocomplete="on" required>  
+        </form>
         <div class="btn-reg-cont">
-          <button type="submit" name="submit_button" class="reg-submit">Зарегестрироваться</button>
+          <button type="submit" name="submit_button" class="reg-submit" id="submit-btn">Зарегестрироваться</button>
         </div>
       </div>
     <div>
