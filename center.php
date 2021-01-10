@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/center.css">
   <link rel="stylesheet" href="styles/login.css">
   <link rel="stylesheet" href="styles/loader.css">
-  <title>rotor.pro</title>
+  <title>Ротор Про</title>
 </head>
 <body ondragstart="drag(event)" style="opacity: 0;">
   <header>
@@ -33,10 +33,10 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
-            <a onclick="blurPage();" class="account-img"><img src="images/user-32.ico" class="account-img"></a>
-            <a href="ur-fav.php" class="liked-img"><img src="images/favorite-2-32.ico" class="liked-img"></a>
-            <img src="images/cart-70-32.ico" class="cart-img"/>
-            <img src="images/menu-4-32.ico" width="32px" height="32px" class="menu-icon"/>
+            <img class="main-img" onclick="blurPage();" src="https://img.icons8.com/metro/128/ffffff/add-user-male.png"/>
+            <img class="main-img" src="https://img.icons8.com/ios-filled/128/ffffff/filled-like.png"/>
+            <img class="main-img" src="https://img.icons8.com/metro/128/ffffff/shopping-cart.png" style="height: 22%;"/>
+            <img class="main-img"src="https://img.icons8.com/metro/128/ffffff/menu.png"/>
           </div>
           <div class="main-product-menu">
             <div class="position-product-menu-1"><i class="left"></i>Husqvarna</div>
