@@ -150,7 +150,9 @@
       <h1 class="hit-prod-zag">Наши магазины</h1>
       <div class="footer-map">
         <div class="shops">
-          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+        <center>
+          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="90%" height="280" frameborder="0"></iframe>
+        </center>
         </div>
         <div class="shops">
           <center>
