@@ -33,10 +33,10 @@
         </div>
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
-            <img class="main-img" onclick="blurPage();" src="https://img.icons8.com/metro/128/ffffff/add-user-male.png"/>
-            <img class="main-img" src="https://img.icons8.com/ios-filled/128/ffffff/filled-like.png"/>
-            <img class="main-img" src="https://img.icons8.com/metro/128/ffffff/shopping-cart.png" style="height: 22%;"/>
-            <img class="main-img"src="https://img.icons8.com/metro/128/ffffff/menu.png"/>
+            <img class="main-img" onclick="blurPage();" src="https://img.icons8.com/metro/64/ffffff/add-user-male.png"/>
+<!--             <img class="main-img" src="https://img.icons8.com/ios-filled/64/ffffff/like.png"/> -->
+            <img class="main-img" src="https://img.icons8.com/metro/64/ffffff/shopping-cart.png"/>
+            <img class="main-img"src="https://img.icons8.com/metro/64/ffffff/menu.png"/>
           </div>
           <div class="main-product-menu">
             <div class="position-product-menu-1"><i class="left"></i>Husqvarna</div>

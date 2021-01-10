@@ -1,4 +1,4 @@
-let menu = document.querySelector(".main-product-menu");
+/* let menu = document.querySelector(".main-product-menu");
 let menuButton = document.querySelector(".menu-icon");
 
 menuButton.addEventListener("mouseover",function(){
@@ -17,3 +17,4 @@ menu.addEventListener("mouseout", function(){
 function deleteMenu(){
     menu.classList.remove("display-block")
   ;}
+ */

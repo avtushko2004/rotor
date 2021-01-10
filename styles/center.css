@@ -88,8 +88,8 @@ i {
   padding-top:0;
   padding-left: 3%;
   border: 0;
-  height: 35px;
-  width:500px;
+  height: 1.5em;
+  width:35vw;
   border-radius: 15px;
   outline: none;
   font-size:20px;
@@ -393,6 +393,6 @@ img{
   to { opacity: 1; }
  }
  .main-img{
-   height: 25%;
+   height: 50%;
    cursor: pointer;
  }
