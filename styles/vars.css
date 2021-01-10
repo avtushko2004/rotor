@@ -1,0 +1,7 @@
+:root {
+    --main-color: rgb(25 94 138);
+    --header-not-scrolled: rgba(16, 56, 84, 0);
+    --header-scrolled: rgb(25 94 138 / 80%);
+    --loader-color: #582cdb;
+    --reg-button: rgba(25 94 138 / 0.8);
+  }
