@@ -6,7 +6,7 @@ let header = document.querySelector('.page-header');
 let position = 0;
         window.addEventListener('scroll', function() {
              if (pageYOffset != 0) {
-                 if (pageYOffset < 300) {
+                 if (pageYOffset < 150) {
                     header.style.height = "9%";
                     header.style.backgroundColor = "var(--header-not-scrolled)";
                  }else{
