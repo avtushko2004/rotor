@@ -148,10 +148,32 @@
     </section>
     <section class="map">
       <h1 class="hit-prod-zag">Наши магазины</h1>
-      <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="100%" height="420" frameborder="0"></iframe>
-    </section>
+      <div class="footer-map">
+        <div class="shops">
+          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+        </div>
+        <div class="shops">
+          <center>
+            <h1 style="margin: 0;">Адреса наших магазинов</h1>
+          </center>
+          <ul class="adres-footer-container">
+            <li>г. Новополоцк, ул. Калинина 20 </li>
+            <li>г. Полоцк, р. Северный, ул. Строительная 19</li>
+          </ul>
+          <center>
+            <h1 style="margin: 0;">Наши контакты</h1>
+          </center>
+          <ul class="adres-footer-container">
+            <li>Номер телефона: +375-33-344-14-00</li>
+            <li>Электронная почта: rotor-pro@rotor.pro</li>
+            <li>Instagram: скоро...</li>
+            <li>ВКонтакте: скоро...</li>
+          </ul>
+        </div>
+      </div>
+      </section>
     <section>
-      <footer class="page-footer">
+<!--       <footer class="page-footer">
         <div class="adres-footer-container">
           <p class="zag-center-footer">Адреса наших магазинов:</p>
           <div class="footer-adres">
@@ -162,7 +184,7 @@
           <p class="contacts-footer-tel">Номер телефона: +375-33-344-14-00</p>
           <p class="contacts-footer-tel">Электронная почта: rotor-pro@rotor.pro</p>
         </div>
-      </footer>
+      </footer> -->
   </section>
   </main>
   <div class="displayWindow" id="login">

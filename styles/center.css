@@ -321,13 +321,17 @@ i {
   margin-left: 16%;
 }
 .map{
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 .map-frame{
   margin-bottom: 0;
   margin-block-end:0;
 
+}
+.footer-map{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
 }
 .page-footer{
   background-color: var(--main-color);
@@ -338,7 +342,10 @@ i {
   justify-content: space-between;
 }
 .adres-footer-container{
-  width:900px;
+  margin-left: 21%;
+  font-weight: 500;
+  font-size: 1.2em;
+  color:var(--main-color);
 }
 .zag-center-footer{
   padding-top: 0.7%;
@@ -395,4 +402,12 @@ img{
  .main-img{
    height: 50%;
    cursor: pointer;
+ }
+ .shops{
+  flex: 1;
+  font-weight: 500;
+  color:var(--main-color);
+ }
+ .shops li{
+  margin-bottom: 1%;
  }
