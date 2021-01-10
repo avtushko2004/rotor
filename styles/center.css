@@ -341,12 +341,7 @@ i {
   flex-direction: row;
   justify-content: space-between;
 }
-.adres-footer-container{
-  margin-left: 21%;
-  font-weight: 500;
-  font-size: 1.2em;
-  color:var(--main-color);
-}
+
 .zag-center-footer{
   padding-top: 0.7%;
   padding-left: 2%;
