@@ -34,7 +34,7 @@
         <div class="menu-nav-icons">
           <div class="icons-header-cont">
             <img class="main-img" onclick="blurPage();" src="https://img.icons8.com/metro/64/ffffff/add-user-male.png"/>
-<!--             <img class="main-img" src="https://img.icons8.com/ios-filled/64/ffffff/like.png"/> -->
+            <!-- <img class="main-img" src="https://img.icons8.com/ios-filled/64/ffffff/like.png"/>  -->
             <img class="main-img" src="https://img.icons8.com/metro/64/ffffff/shopping-cart.png"/>
             <img class="main-img"src="https://img.icons8.com/metro/64/ffffff/menu.png"/>
           </div>
@@ -149,12 +149,19 @@
     <section class="map">
       <h1 class="hit-prod-zag">Наши магазины</h1>
       <div class="footer-map">
+<<<<<<< HEAD
         <div class="shops">
         <center>
           <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="90%" height="280" frameborder="0"></iframe>
         </center>
         </div>
         <div class="shops">
+=======
+        <!-- <div class="shops"> -->
+          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+        <!-- </div> -->
+        <!-- <div class="shops">
+>>>>>>> 91f368c7c4b1390ddbdfdc8d452062622be83a2a
           <center>
             <h1 style="margin: 0;">Адреса наших магазинов</h1>
           </center>
@@ -171,11 +178,11 @@
             <li>Instagram: скоро...</li>
             <li>ВКонтакте: скоро...</li>
           </ul>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
       </section>
     <section>
-<!--       <footer class="page-footer">
+    <footer class="page-footer">
         <div class="adres-footer-container">
           <p class="zag-center-footer">Адреса наших магазинов:</p>
           <div class="footer-adres">
@@ -186,7 +193,7 @@
           <p class="contacts-footer-tel">Номер телефона: +375-33-344-14-00</p>
           <p class="contacts-footer-tel">Электронная почта: rotor-pro@rotor.pro</p>
         </div>
-      </footer> -->
+      </footer>
   </section>
   </main>
   <div class="displayWindow" id="login">
