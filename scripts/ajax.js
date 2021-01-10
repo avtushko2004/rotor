@@ -40,6 +40,13 @@ const reg = () => {
 }
 const checkCode = (props) => {
     if (props.length == 6 && mailCode == sha256(props)) {
+        const xmlhr = new XMLHttpRequest();
+        xmlhr.open("GET",`./check-mail.php?code=${props}`, true);
+        xmlhr.send();
+        xmlhr.onload = function(){
+            console.log(xmlhr.responseText);
+            console.log(props);
+        }    
         useLoader('mailCode','success', 1000);
         setTimeout(function () {
             blurPage('unblur');
