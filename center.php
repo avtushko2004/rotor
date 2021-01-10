@@ -273,6 +273,6 @@
 <script src="scripts/login.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/ajax.js"></script>
-<script src="../node_modules/js-sha256/src/sha256.js"></script>
+<script src="./node_modules/js-sha256/src/sha256.js"></script>
 </body>
 </html>
