@@ -149,19 +149,10 @@
     <section class="map">
       <h1 class="hit-prod-zag">Наши магазины</h1>
       <div class="footer-map">
-<<<<<<< HEAD
-        <div class="shops">
-        <center>
-          <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="90%" height="280" frameborder="0"></iframe>
-        </center>
-        </div>
-        <div class="shops">
-=======
         <!-- <div class="shops"> -->
           <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A02c1334020a5fdcfb2d45d2fc2fdad1a1072f26804c228d5bc0976e88cb04c68&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
         <!-- </div> -->
         <!-- <div class="shops">
->>>>>>> 91f368c7c4b1390ddbdfdc8d452062622be83a2a
           <center>
             <h1 style="margin: 0;">Адреса наших магазинов</h1>
           </center>
